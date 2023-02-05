@@ -1,6 +1,10 @@
 import React from "react";
+import { useGlobalContext } from "../context";
 
-const Header = ({selectedTeam, teamCount}) => {
+const Header = () => {
+
+    const {selectedTeam, teamCount} = useGlobalContext();
+
     return (
         <header className="container">
             <div className="row justify-content-center mt-3 mb-4">
